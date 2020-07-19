@@ -5,7 +5,7 @@ var level = 0;
 var index = 0;
 var started = false;
 
-$(document).keyup(function(){
+$(h1).click(function(){
   if(!started){
     level=0;
     started = true;
@@ -35,7 +35,7 @@ function checkSequence(clickedColour){
     $("body").addClass("game-over");
     setTimeout(function(){$("body").removeClass("game-over");},200);
     started=false;
-    $("h1").text("Press A Key to Start");
+    $("h1").text("Click here to Start");
     gamePattern=[];
     userClickedPattern=[];
   }
