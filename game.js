@@ -5,7 +5,7 @@ var level = 0;
 var index = 0;
 var started = false;
 
-$(document).click(function(){
+$(document).keypress(function(){
   if(!started){
     level=0;
     started = true;
